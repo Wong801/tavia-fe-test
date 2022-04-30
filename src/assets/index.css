@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&family=Montserrat:wght@700&family=Poppins:wght@700&display=swap&family=Rubik:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-rubik font-light text-[#402B2B] text-base md:text-sm lg:text-base 2xl:text-lg
+}
+
+.form-input {
+  @apply border border-[#C5AE96] rounded-md px-4 md:px-3 lg:px-6 2xl:px-8 pt-2 pb-3 placeholder-[#402B2B] text-base md:text-sm lg:text-base 2xl:text-lg appearance-none
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
